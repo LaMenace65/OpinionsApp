@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+
+<div>
+  <input [(ngModel)]="opinion" placeholder="Entrez 'pour' ou 'contre'" />
+  <button (click)="submitOpinion()">Soumettre</button>
+</div>
+
+<div>
+  <h2>Opinions</h2>
+  <ul>
+    <li *ngFor="let opinion of opinions">{{opinion}}</li>
+  </ul>
+</div>

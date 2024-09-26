@@ -1,0 +1,10 @@
+<dx-report-designer [reportUrl]="reportUrl" height="calc(100vh - 90px)" developmentMode="true">
+    <dxrd-request-options [getDesignerModelAction]="getDesignerModelAction" [host]="hostUrl"></dxrd-request-options>
+    <dxrd-callbacks (BeforeRender)="OnBeforeRender($event)">
+    </dxrd-callbacks>
+    <dxrd-designer-model-settings>
+        <dxrd-preview-settings>
+            <dxrv-search-settings searchEnabled="true"></dxrv-search-settings>
+        </dxrd-preview-settings>
+    </dxrd-designer-model-settings>
+</dx-report-designer>
